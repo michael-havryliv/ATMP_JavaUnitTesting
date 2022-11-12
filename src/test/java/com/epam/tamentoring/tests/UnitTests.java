@@ -43,7 +43,6 @@ class UnitTests extends BaseUnitTest{
         shoppingCart.addProductToCart(product);
         shoppingCart.addProductToCart(product);
 
-        Assertions.assertEquals(1, shoppingCart.getProducts().size());
         Assertions.assertEquals(product.getQuantity(),shoppingCart.getProductById(product.getId()).getQuantity());
     }
 
